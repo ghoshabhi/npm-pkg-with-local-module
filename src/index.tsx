@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import Counter from 'counter-ui';
 
-export type ICounterProps = {
+export type CounterWrapperProps = {
   className?: string
 }
 
-const App: React.FC<ICounterProps> = ({ className = '' }) => {
+const CounterWrapper: React.FC<CounterWrapperProps> = ({ className = '' }) => {
   const [count, setCount] = useState(0)
 
   useEffect(() => {
@@ -18,7 +18,11 @@ const App: React.FC<ICounterProps> = ({ className = '' }) => {
     return () => clearInterval(interval)
   }, [count, setCount])
 
-  return <Counter className={className} count={count} />
+  return (
+    <div className='counter__wrapper'>
+      <Counter className={className} count={count} />
+    </div>
+  )
 }
 
-export default App
+export default CounterWrapper;
