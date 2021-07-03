@@ -1,6 +1,6 @@
 {
   "name": "npm-pkg-with-local-module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A dummy counter component",
   "author": "ghoshabhi",
   "license": "Apache-2.0",
