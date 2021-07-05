@@ -1,6 +1,6 @@
 {
   "name": "npm-pkg-with-local-module",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A dummy counter component",
   "author": "ghoshabhi",
   "license": "Apache-2.0",
@@ -36,7 +36,9 @@
     "typescript": "^2.8.3"
   },
   "files": [
-    "dist"
+    "dist",
+    "libs/*/dist",
+    "libs/*/package.json"
   ],
   "keywords": [
     "react",
